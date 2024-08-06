@@ -1,0 +1,110 @@
+.Title {
+  display: grid;
+  place-items: center;
+  background-color: var(--bg_colour_black);
+  height: var(--nav-height);
+  color: var(--text_colour_white);
+  text-align: center;
+}
+
+.Container {
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap_l);
+}
+.Container .Column__Section {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.Container .Column__Section form {
+  margin: var(--mg_l) auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.Container .Column__Section form .Input__Section {
+  margin: var(--mg_s) 0px;
+  display: flex;
+  flex-direction: column;
+}
+.Container .Column__Section form .Input__Section label {
+  position: absolute;
+  background-color: var(--bg_colour_white);
+  padding: 2px 5px;
+  transform: translate(13px, -13px);
+}
+.Container .Column__Section form .Input__Section input {
+  background-color: var(--bg_colour_white);
+  border-radius: 6px;
+  padding: var(--padding_l);
+  border: 1px solid var(--text_colour_lgray);
+  font-size: var(--font_size_s);
+}
+.Container .Column__Section form .Input__Section input.Btn {
+  width: 100%;
+  background-color: var(--bg_colour_black);
+  border: none;
+}
+.Container .Column__Section form p {
+  margin: var(--mg_m) 0px;
+}
+.Container .Column__Section form p a {
+  color: var(--text_colour_black);
+  text-decoration: underline;
+}
+.Container .Column__Section.Elements svg {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+}
+
+.Section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 26, 26, 0.4235294118);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.Section .ContainerQR {
+  padding: var(--padding_l);
+  background-color: var(--bg_colour_absolutewhite);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_s);
+}
+.Section .ContainerQR .SVG__Container {
+  display: grid;
+  place-items: center;
+  padding: var(--padding_m);
+}
+
+@media screen and (max-width: 710px) {
+  .Container {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .Container .Column__Section {
+    width: 100%;
+  }
+}
+.Btn {
+  width: 250px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--bg_colour_black);
+  color: var(--text_colour_white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: var(--padding_btn_m);
+  border-radius: 6px;
+}/*# sourceMappingURL=Style.css.map */
